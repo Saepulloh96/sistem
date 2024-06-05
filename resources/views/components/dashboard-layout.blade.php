@@ -2,9 +2,9 @@
             <label for="my-drawer-2" class="btn btn-square btn-ghost drawer-button lg:hidden">
                 <x-menu-icon></x-menu-icon>
             </label>
-            
 
-            <a href="/" class="text-xl font-bold">PT. MAHATA JAYA</a>
+
+            <a href="/" class="text-xl font-bold">PT. MAKMUR JAYA</a>
 
             <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-outline hover:btn-ghost m-1">{{Auth::user()->nama}}</label>
@@ -24,10 +24,10 @@
             <!-- Page content here -->
 
             {{$slot}}
-            
-        </div> 
+
+        </div>
         <div class="drawer-side">
-            <label for="my-drawer-2" class="drawer-overlay"></label> 
+            <label for="my-drawer-2" class="drawer-overlay"></label>
             <ul class="menu p-4 pt-24 w-72 bg-base-200 text-base-content">
               <!-- Sidebar content here -->
               <li><a href="{{ route('lokasi.index') }}">Lokasi</a></li>
@@ -39,6 +39,6 @@
               <li><a href="{{ route('list-absensi-anggota') }}">Absensi</a></li>
               <li><a href="{{ route('laporan-gaji') }}">Laporan Gaji</a></li>
           </ul>
-          
+
       </div>
   </div>
